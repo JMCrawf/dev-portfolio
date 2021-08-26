@@ -1,3 +1,11 @@
+.logo {
+  position: absolute; 
+  top: 0px;
+  left: -1px;
+  width: 310px;
+  height: auto;
+  z-index: 3;
+}
 
 #hero {
   min-height: 100vh;
@@ -24,7 +32,7 @@
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
