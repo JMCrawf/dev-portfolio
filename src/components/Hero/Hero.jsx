@@ -1,12 +1,12 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
+import { heroData } from '../../mock/data';
 import logo from '../../images/logo.png';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
+  const hero = heroData;
   const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);

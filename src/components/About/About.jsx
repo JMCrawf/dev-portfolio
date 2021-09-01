@@ -1,13 +1,11 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import PortfolioContext from '../../context/context';
+import { aboutData } from '../../mock/data';
 
 const About = () => {
-  const { about } = useContext(PortfolioContext);
-  const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
-
+  const { paragraphOne, paragraphTwo, paragraphThree, resume } = aboutData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
